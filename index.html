@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Animations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>CSS Animations (Transform & Transition)</title>
 </head>
 
 <body>
-    
+    <style>
+        body {
+            padding: 3rem;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.my-box {
+            background-color: cornflowerblue;
+            width: 250px;
+            height: 250px;
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            border-top: solid 4px lightgray;
+            border-bottom: solid 4px lightgray;
+            border-right: solid 4px black;
+            border-left: solid 4px black;
+        }
+
+        /* TRANSFORM: */
+        div.test-class {
+            /* rotate(a), rotateX(a), rotateY(a), RotateZ(a) - a in [deg, turn] */
+            /* scale(a), scaleX(a), scaleY(a), scaleZ(a), - a in [0,1,2...] */
+            /* skew(a,b), skewX(a), skewY(a) - a in [deg] */
+            /* translate(a,b), translateX(a), translateX(b) - a,b in [px, %] */
+            /* perspective(a), - a in [%] (https://developer.mozilla.org/en-US/docs/web/CSS/perspective) */
+        }
+
+        /* TRANSITION */
+        div.animated-class:hover {
+            /* Rule structure: transition: property duration timing_fn delay */
+            /* Timing Function: https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function */
+            /* Bezier Curve: https://cubic-bezier.com */
+        }
+    </style>
+    <div class="flex-center">
+        <div class="my-box flex-center test-class animated-class">
+            My Box
+        </div>
+    </div>
 </body>
+
 </html>
